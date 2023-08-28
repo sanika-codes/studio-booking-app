@@ -1,0 +1,15 @@
+.sideMain{
+    width:25%;
+    background-color:white;
+    color: #777777;
+    padding:4%;
+
+}
+.sideMain li{
+    padding: 5% 0;
+    font-size:24px;
+}
+hr{
+    width:50%;
+    border-color:#e2e2e2;
+}

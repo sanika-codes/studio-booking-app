@@ -1,0 +1,21 @@
+.tnc-inner{
+    width:75%;
+    background-color: #F4F4F4;
+}
+.tnc-inner ol{
+    margin-top:5%;
+}
+h3{
+    display: inline;
+    font-weight: 600;
+    font-size: 1em;
+}
+.agree-checkbox{
+    margin: 10px 0;
+}
+.agree-checkbox input{
+    margin-right:20px;
+}
+#proceed-button{
+    margin-top:3%;
+}

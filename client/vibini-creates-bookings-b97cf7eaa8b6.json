@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vibini-creates-bookings",
+  "private_key_id": "b97cf7eaa8b61c7ca16af6802f560dfd9fa75dde",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHGdO6mUcX+feR\nehA6h5kM0A7WFNek69llQXN7LT3XkVlo7/jRaf+F8MaiEtzXLmLkfIqEs+6giiow\nDhu/Ux2rcitncjujdHdBa9UkZpUL4ibUscOZGMVO9j3XPwrCaaVywIhRQy5J5nsX\nHER8oF7E7sOMHmNCTwYHlqY5P6PCM8wKD9OmmYZEmd7w7J2mAcjyg0lKZ/KZJZjh\nCI0j/jCcEA4lqeSehPlu2SQdAWBhBajMGtBhebs0EJnt5rFfKrTUjxNOVkvpkXpe\nxRVZSsUjkxT1pTcFnJkzi1W8z6A+kCmx5HupBIb72kCOJFDVhidrjch1UVd/ZGLm\nNlvB2jZJAgMBAAECggEAVfmlIFLIDGZ4rW1UTLH5OTsu7OsbI7BktADLaUlkBw5Q\n2aumemeXW7NZUutqSdFSCvBssFkylkiTZyTwfnHZwgsPCyCc+Dx2st1psMpLWlJS\nCk6o9BdqPGrA0Y37i3ArbZ4OP2kPOAI67QPb3yUxR0EDWCJXIm8VX3mCVf5RLK6E\n8ur9jl20oq4Zu7je+wP4aQ0aqzze11OcQDyg43wHsRByW0SB0VxgPfOJpVSM1ZDu\n4ZGnISzcl+lQs4L6s5Wyaeg7K1+RKWOOgJsrpVbyxd1C7SK3DRudZ9NbpcYGiwVU\nLsqZRrtqf9qPpFUKi8lOPnTzhNQAS641OU38vPI68QKBgQD+Ws13OuSkPSxN/dQL\n5FvJocGSq/EK5ux42+sHabBTcfyzDtRbn5oki9/guWPJWwQxy3rV2CvkfjiBu2Ob\n1g9T3KSsgXnt4Z6YlylgoPwKV3QQ91ZlF0RHTgJpVC4dsDp6QN9ZV+e4UT0uKM8Q\nGuFaGricqDjJHA+CuZbVjJBLDwKBgQDIY4b2C22lavHZqZVOdKiuHCG/X1P4DKkL\nk9osmy2F6lrS7q4xjxb2FQ3RumaI7chmJ4SCRa09P4GJlvYFFb/jYNMW6Pysr5Tg\nqBO5ouZEJLweRvx20mxXzLS159++P+z6DSC0mH8uBGl6eGVK2mDUoIQ/EizPFmHb\ngtHo5BDJJwKBgCD0TMiU1ci9sD7OkymTRZ0jGvxQ0KMT9jFWdOX5+IFnNFFSq4rP\na94uTSxFeLs+0pVNArYwEsfA3rtYNviazFOWM7Ox9sUuRSkJ9K9zTBRe7kfAc+4X\nDJ6cac2RvYPVME5kl0txCzGjPOT9Ho68nNPawG5zkR/lRdEvEG7MjmlbAoGAJ4Uh\nb9LvK+l8ix3b2V4+ih/4M+LcD5aHnEXriFKOVtPSV7lE13dN4vhiAlPNtwGWPTdb\n9clCEks9A+Km4HfaoUBOQT1v36q9JNVhFoJfAV9xTlNXpSN4xJQVq65wPPgkh2gh\nZByTMIMkPkgSSgHpiOWjT0EJX0odwIn7Vf/so48CgYBYBPFUhpK+nAmlgmxnIiMF\ngZLBsBKBBStIR/IDh5XbyRV0kKt+FFT3k/uY+K4vQx0HJ+Ary5Y8rLoJWob1BGHO\nqK+cIjBLLOD0ZFlRsD8pwGbeVf0lkiuh0mysSkgVHD4ITFX4LSsP2d1/clK+R9n4\n3+bQ3S2vz/Pp3OPwPAGQGQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "vibini-creates-web-app@vibini-creates-bookings.iam.gserviceaccount.com",
+  "client_id": "111974760439852826114",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vibini-creates-web-app%40vibini-creates-bookings.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

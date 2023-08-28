@@ -1,0 +1,92 @@
+.main-booking h2,
+.main-booking p {
+  width: 100%;
+  text-align: center;
+}
+.booking-option {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main-booking h2,
+.booking-option h4 {
+  font-size: 48px;
+}
+
+.booking-option p,
+.booking-option button {
+  margin-top: 10%;
+}
+.booking-option button {
+  color: #7bbfc4;
+}
+.booking-option {
+  width: 30%;
+  border: 1px solid #7bbfc4;
+  border-radius: 24px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  text-align: center;
+  position: relative;
+}
+.booking-option h3 {
+  background-color: white;
+  position: absolute;
+  top: -4%;
+  left: 25%;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 400;
+}
+.bookButton{
+  background-color: transparent;
+  border:0px;
+}
+@media screen and (max-width: 1024px) {
+  .main-booking h2 {
+    font-size: 2.5em;
+  }
+  .booking-option {
+    font-size: 16px;
+  }
+  .booking-option h4 {
+    font-size: 1em;
+    margin-top: 20%;
+  }
+  .booking-option h3 {
+    margin-bottom: 20%;
+  }
+  .booking-option h4 {
+    margin-top: 20%;
+  }
+  
+}
+@media screen and (max-width: 767px) {
+  .booking-option {
+    width: 100%;
+    margin-bottom:10%;
+  }
+  .main-booking h2{
+    font-size:1.5em;
+  }
+  .booking-option p,
+.booking-option button,.booking-option h4 {
+  margin-top: 5%;
+}
+.booking-option h3{
+    top:-7%;
+    font-size:16px;
+}
+}
+.main-booking {
+  justify-content: space-between;
+}
+.monthly {
+  background-image: url("/src/assets/images/monthly sub bg.png");
+}
+.one-day {
+  background-image: url("/src/assets/images/one day sub bg.png");
+}
+.hourly {
+  background-image: url("/src/assets/images/hourly sub bg.png");
+}

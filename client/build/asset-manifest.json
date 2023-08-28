@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b9b6ce2.css",
+    "main.js": "/static/js/main.1e25af40.js",
+    "static/media/homeFirst bg.png": "/static/media/homeFirst bg.24aae2a15ace98f56a27.png",
+    "static/media/studio photo.png": "/static/media/studio photo.78f6b2a1fcf1a224bd5b.png",
+    "static/media/pottery.png": "/static/media/pottery.f9129ecd2006199d57c5.png",
+    "static/media/workshops.png": "/static/media/workshops.ef89787802eba0341218.png",
+    "static/media/art fun activities.png": "/static/media/art fun activities.2a18c669ef05419f7e58.png",
+    "static/media/photoshoot.png": "/static/media/photoshoot.400a221aacc7f776b909.png",
+    "static/media/dance yoga.png": "/static/media/dance yoga.dd95c921b47f4958dbf5.png",
+    "static/media/exhibitions.png": "/static/media/exhibitions.e9e4c23c9050a83f574e.png",
+    "static/media/v bg.png": "/static/media/v bg.22a851553423f7a8d77e.png",
+    "index.html": "/index.html",
+    "main.9b9b6ce2.css.map": "/static/css/main.9b9b6ce2.css.map",
+    "main.1e25af40.js.map": "/static/js/main.1e25af40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b9b6ce2.css",
+    "static/js/main.1e25af40.js"
+  ]
+}

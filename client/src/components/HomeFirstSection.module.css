@@ -1,0 +1,52 @@
+
+.homeFirst {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  font-size: 24px;
+  font-weight: 400;
+  background:url('/src/assets/images/homeFirst bg.png'), lightgray 50% / cover no-repeat;
+  background-position:center center;
+}
+
+.big-heading {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.homeFirst button{
+    z-index:1;
+}
+@media screen and (max-width:1024px){
+    .big-heading {
+        font-size: 54px;
+    }
+    .homeFirst p{
+        font-size:30px;
+    }
+}
+@media screen and (max-width:768px){
+    .big-heading {
+        font-size: 24px;
+    } 
+    .homeFirst p{
+        font-size:18px;
+    } 
+}
+.homeFirst span{
+    color:#7BBFC4;
+    font-style : italic ;
+}
+.overlay{
+    background-image:url('/src/assets/images/v bg.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:0;
+}
