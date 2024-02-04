@@ -1,0 +1,22 @@
+.mainSecond {
+  background-color: #f6f2e9;
+  flex-direction: row;
+  position: relative;
+}
+.left-section,
+.right-section {
+  width: 50%;
+}
+.right-section{
+  padding:0;
+}
+
+@media screen and (max-width: 768px) {
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+}

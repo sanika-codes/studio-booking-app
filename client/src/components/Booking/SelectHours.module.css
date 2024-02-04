@@ -1,45 +1,50 @@
-li.timeSlotLi,button.timeSlot{
-    display:inline;
+li.timeSlotLi,
+button.timeSlot {
+  display: inline;
 }
-button.timeSlot{
-    padding: 10px 8px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    font-weight:500;
-    background-color: white;
-    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
+button.timeSlot {
+  padding: 10px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: white;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
+}
+button.timeSlot:disabled {
+  color: white;
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+button.timeSlot[selectedslot="true"] {
+  background-color: #7bbfc4;
+}
 
+#timeSlotUl {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-button.timeSlot:disabled{
-    color: white;
-    background-color: #E6e6e6;
-    cursor:not-allowed;
+.reset {
+  font-size: 0.9em;
+  padding: 0;
+  margin: 10px 0;
+  background-color: transparent;
+  text-decoration: underline;
 }
-button.timeSlot[selectedslot='true']{
-    background-color:#7bbfc4;
+#selections {
+  background-color: white;
+  padding: 2%;
+  width: 50%;
+  margin: 2% 0;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
 }
-
-#timeSlotUl{
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+#selections h3 {
+  font-weight: 600;
+  font-size: 1em;
 }
-.reset{
-    font-size:0.9em;
-    padding:0;
-    margin:10px 0;
-    background-color: transparent;
-    text-decoration: underline;
-}
-#selections{
-    background-color: white;
-    padding: 2%;
-    width: 50%;
-    margin: 2% 0;
-    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
-}
-#selections h3{
-    font-weight: 600;
-    font-size: 1em;
+@media screen and (max-width: 1024px) {
+  #selections {
+    width: 100%;
+  }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HomeFirstSection from './components/HomeFirstSection';
-import HomeSecondSection from './components/HomeSecondSection';
+import HomeSecondSection from './components/HomeSecondSection/HomeSecondSection';
 import HomeBookingSection from './components/HomeBookingSection';
 import HomeFourthSection from './components/HomeFourthSection';
 

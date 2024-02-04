@@ -6,11 +6,11 @@ const StepsPanel = () => {
   return (
     <aside className={`container ${classes.sideMain} `}>
       <ol>
-        <li>Enter personal details</li>
+        <li>Enter personal details  </li>
         <hr />
-        <li>Enter booking details</li>
+        <li>Enter booking details </li>
         <hr />
-        <li>Terms and Conditions</li>
+        <li>Terms and Conditions  </li>
         <hr />
         <li>Payment</li>
       </ol>

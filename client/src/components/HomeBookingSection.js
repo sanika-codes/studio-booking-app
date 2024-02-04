@@ -9,6 +9,7 @@ import Payment from "./Booking/Payment";
 const HomeBookingSection = () => {
   const [bookingView, setBookingView] = useState("ShowPlans");
   const [plan, setPlan] = useState("");
+  const total = 0;
   //In case of monthly plan, time will be blank. In case of oneday plan time will be 6am to 8pm. In case of oneday and hourly plan, date array will only have 1 value, 2nd value will be blank
   const [userDetails, setUserDetails] = useState({
     name: "hello",
@@ -67,12 +68,14 @@ const HomeBookingSection = () => {
           />
         );
       case "Payment":
-        return <Payment userDetails={userDetails} />;
+        return <Payment userDetails={userDetails} plan={plan}/>;
       default:
         return <Plans onUserClickPlan={planClickHandler} />;
     }
   };
-  return getBookingView();
+  return <div id="bookingSection">
+    {getBookingView()}
+  </div>
 };
 
 export default HomeBookingSection;

@@ -1,11 +1,23 @@
-#selections{
-    background-color: white;
-    padding: 2%;
-    width: 50%;
-    margin: 2% 0;
-    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
+#selections {
+  background-color: white;
+  padding: 2%;
+  width: 50%;
+  margin: 2% 0;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.04);
 }
-#selections h3{
-    font-weight: 600;
+#selections h3 {
+  font-weight: 600;
+  font-size: 1em;
+}
+@media screen and (max-width: 1024px) {
+  #selections {
+    width: 100%;
+    padding: 4%;
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #selections {
+    font-size: 0.9em;
+  }
 }

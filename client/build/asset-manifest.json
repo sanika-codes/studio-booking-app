@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b9b6ce2.css",
-    "main.js": "/static/js/main.1e25af40.js",
+    "main.css": "/static/css/main.ff4f5b66.css",
+    "main.js": "/static/js/main.1ba0cb87.js",
     "static/media/homeFirst bg.png": "/static/media/homeFirst bg.24aae2a15ace98f56a27.png",
-    "static/media/studio photo.png": "/static/media/studio photo.78f6b2a1fcf1a224bd5b.png",
+    "static/media/studio-photo.png": "/static/media/studio-photo.78f6b2a1fcf1a224bd5b.png",
     "static/media/pottery.png": "/static/media/pottery.f9129ecd2006199d57c5.png",
     "static/media/workshops.png": "/static/media/workshops.ef89787802eba0341218.png",
+    "static/media/IMG_1674.jpg": "/static/media/IMG_1674.e3f37954c51fbb5eb2a0.jpg",
     "static/media/art fun activities.png": "/static/media/art fun activities.2a18c669ef05419f7e58.png",
     "static/media/photoshoot.png": "/static/media/photoshoot.400a221aacc7f776b909.png",
+    "static/media/IMG_1690.jpg": "/static/media/IMG_1690.217336e76c1faea45e50.jpg",
     "static/media/dance yoga.png": "/static/media/dance yoga.dd95c921b47f4958dbf5.png",
+    "static/media/IMG_1698.jpg": "/static/media/IMG_1698.f25a4316a8eee3d218c5.jpg",
     "static/media/exhibitions.png": "/static/media/exhibitions.e9e4c23c9050a83f574e.png",
     "static/media/v bg.png": "/static/media/v bg.22a851553423f7a8d77e.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.9b9b6ce2.css.map": "/static/css/main.9b9b6ce2.css.map",
-    "main.1e25af40.js.map": "/static/js/main.1e25af40.js.map"
+    "static/media/calendar.svg": "/static/media/calendar.08985b2ee65f4e970afe4a44819c77c7.svg",
+    "static/media/user-g.svg": "/static/media/user-g.7adeda6e70ba3932ddc4444fc3f3b0c5.svg",
+    "static/media/clock.svg": "/static/media/clock.eefabd5a87489a8e942a1252682cbbd2.svg",
+    "main.ff4f5b66.css.map": "/static/css/main.ff4f5b66.css.map",
+    "main.1ba0cb87.js.map": "/static/js/main.1ba0cb87.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b9b6ce2.css",
-    "static/js/main.1e25af40.js"
+    "static/css/main.ff4f5b66.css",
+    "static/js/main.1ba0cb87.js"
   ]
 }

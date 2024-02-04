@@ -9,7 +9,7 @@
     padding:15px;
     margin-bottom:3%;
   }
-  
+ 
   .react-calendar--doubleView {
     width: 700px;
   }
@@ -150,4 +150,10 @@
   
   .react-calendar--selectRange .react-calendar__tile--hover {
     background-color: #e6e6e6;
+  }
+
+  @media screen and (max-width:1024px){
+    .react-calendar{
+      width:100%;
+    }
   }

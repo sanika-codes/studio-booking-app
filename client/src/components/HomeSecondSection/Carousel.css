@@ -1,0 +1,8 @@
+.imgslider, .imgslider .slick-slider{
+    width:100%
+}
+@media screen and (max-width:767px){
+    .slick-slide img{
+        height:500px;
+    }
+}

@@ -1,0 +1,67 @@
+.payment-div{
+    width:75%;
+    background-color: #F4F4F4;
+}
+.payment-div p{
+    text-align: left;
+}
+.review{
+    background-color: white;
+    padding:2% 3%;
+    margin: 4% 0;
+    color:#808080;
+    font-weight:400;
+    width:80%;
+}
+#bookingDetails{
+    border-radius: 4px;
+background: #C4EEF1;
+display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    padding:2%;
+    margin:2% 0;
+    gap:20px;
+}
+#bookingDetails div{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    color:black;
+}
+#bookingDetails div img{
+    color:#808080;
+}
+#orderSummary{
+    text-align: left;
+}
+#orderSummary table{
+    width:100%;
+    border-spacing:10px;
+    color:black;
+}
+@media screen and (max-width:1024px){
+    .payment-div{
+        width:100%;
+    }
+    .payment-details,.review{
+        width:100%;
+    }
+    .review{
+        padding:5% 3%;
+    }
+    
+}
+@media screen and (max-width:768px){
+   #bookingDetails{
+    flex-direction: column;
+    padding:5%;
+    font-size:0.9em;
+    margin: 4% 0;
+   }
+   #orderSummary{
+    font-size:14px;
+   }
+    
+}

@@ -22,7 +22,7 @@ const TNC = (props) => {
       <StepsPanel />
       <div className={`container ${styles["tnc-inner"]}`}>
         <h2 className="heading-normal">Terms & Conditions</h2>
-        <ol>
+        <ol className="small-text">
           <li>
             <h3>Acceptance of Terms : </h3>
             By accessing and using the Vibini Creates website ("the Site"), you

@@ -4,6 +4,7 @@
 }
 .tnc-inner ol{
     margin-top:5%;
+    text-align:left;
 }
 h3{
     display: inline;
@@ -18,4 +19,12 @@ h3{
 }
 #proceed-button{
     margin-top:3%;
+}
+@media screen and (max-width:1024px){
+    .tnc-inner{
+        width:100%;
+    }
+   
+    
+    
 }

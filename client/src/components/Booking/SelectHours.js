@@ -264,6 +264,7 @@ const SelectHours = (props) => {
   const [selectedTimeSlot1, setSelectedTimeSlot1] = useState("");
   const [selectedTimeSlot2, setSelectedTimeSlot2] = useState("");
   const [time, setTime] = useState([-1, -1]);
+  const [proceedButtonDisabled, setProceedButtonDisabled] = useState(true);
 
   useEffect(() => {
     if (!isNaN(props.date)) {
@@ -282,25 +283,23 @@ const SelectHours = (props) => {
           (data) => {
             //Data is received as an array if more than 1 busy events are found. If 1 event is found an object is returned.
             let from, to, toMinutes;
-               console.log(data);
+
             if (data.busyData !== undefined) {
               data.busyData.forEach((element) => {
                 from = new Date(element.start).getHours();
                 to = new Date(element.end).getHours();
                 toMinutes = new Date(element.end).getMinutes();
                 if (toMinutes > 0) to = to + 1;
-                  console.log("from :" + from + "to:" + to);
 
                 let updatedSlots = timeSlotsInitialState;
                 for (let i = from; i < to; i++) {
                   let index = timeSlots.findIndex((e) => e.value === i);
-                  //  console.log("index is" + index);
 
                   updatedSlots[index].disabled = true;
                 }
-                
+
                 setTimeSlots(updatedSlots);
-                console.log(timeSlots);
+
                 setSelectedTimeSlot1("");
                 setSelectedTimeSlot2("");
                 setTime([-1, -1]);
@@ -338,9 +337,23 @@ const SelectHours = (props) => {
       return slot;
     });
     setTimeSlots(updatedSlots);
-    if (timeSlots[from] && timeSlots[to])
+    if (timeSlots[from] && timeSlots[to]) {
       setTime([timeSlots[from].fromLabel, timeSlots[to].toLabel]);
+    }
   }, [selectedTimeSlot2]);
+
+  useEffect(() => {
+    let fromTimeValue, toTimeValue;
+    if (time[0] !== -1) {
+      fromTimeValue = timeSlots.findIndex((s) => s.fromLabel == time[0]);
+      toTimeValue = timeSlots.findIndex((s) => s.toLabel == time[1]);
+
+      props.onSlotClick([
+        timeSlots[fromTimeValue].value,
+        timeSlots[toTimeValue].value + 1,
+      ]);
+    }
+  }, [time]);
 
   const checkRangeIsValid = (secondSlot) => {
     //checks whether user has selected a slot of upto 4 hours
@@ -352,13 +365,17 @@ const SelectHours = (props) => {
       from = to;
       to = temp;
     }
-    if (to - from > 3) return false;
-    else return true;
+    if (to - from > 5) return false;
+    for (let i = from; i < to; i++) {
+      if (timeSlots[i].disabled) return false;
+    }
+    return true;
   };
 
   const selectSlotHandler = (evt) => {
     evt.preventDefault();
     if (selectedTimeSlot1 === "" || selectedTimeSlot2 === "") {
+      //User clicked on first slot
       if (selectedTimeSlot1 === "") {
         setSelectedTimeSlot1(evt.target.name);
         let updatedSlots = timeSlots.map((slot) => {
@@ -372,6 +389,8 @@ const SelectHours = (props) => {
           timeSlots[evt.target.getAttribute("arrindex")].fromLabel,
           timeSlots[evt.target.getAttribute("arrindex")].toLabel,
         ]);
+        setProceedButtonDisabled(false);
+        //User clicked on second slot
       } else if (selectedTimeSlot2 === "") {
         if (checkRangeIsValid(evt.target.getAttribute("arrindex"))) {
           setSelectedTimeSlot2(evt.target.name);
@@ -408,11 +427,12 @@ const SelectHours = (props) => {
     setSelectedTimeSlot1("");
     setSelectedTimeSlot2("");
     setTime([-1, -1]);
+    setProceedButtonDisabled(true);
   };
 
   return (
     <div>
-      <label>Select time slot ( You may select a range of up to 4 hours)</label>
+      <label>Select time slot ( You may select a range of up to 6 hours)</label>
       <div id={styles.timeSlots}>
         <ul id={styles.timeSlotUl}>
           {props.date
@@ -451,6 +471,13 @@ const SelectHours = (props) => {
           {time[1] === -1 ? "___" : time[1]}
         </p>
       </div>
+      <button
+        type="submit"
+        className="hover-effect"
+        disabled={proceedButtonDisabled}
+      >
+        Proceed
+      </button>
     </div>
   );
 };

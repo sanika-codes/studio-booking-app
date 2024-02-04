@@ -5,6 +5,7 @@ import moment from 'moment';
 const FullDayBooking = (props) => {
 
     const [message, setMessage] = useState(""); 
+    const [proceedButtonDisabled, setProceedButtonDisabled] = useState(true);
 
     useEffect(() => {
         if (props.date && !isNaN(props.date)) {
@@ -29,6 +30,7 @@ const FullDayBooking = (props) => {
                 } else {
                   //No busy slots found on this date
                   setMessage("You have selected " + moment(props.date).format("MMMM Do YYYY"));
+                  setProceedButtonDisabled(false);
                 }
               },
               function (error) {
@@ -38,12 +40,14 @@ const FullDayBooking = (props) => {
         }
       }, [props.date]);
   return (
-    
-      message.length > 0 ? ( <div id={styles.selections}>
+    <>
+      {message.length > 0 ? ( <div id={styles.selections}>
      <h3>{message}</h3>
-    </div>) : ''
-    
-   
+    </div>) : ''}
+      <button type="submit" className="hover-effect" disabled={proceedButtonDisabled}>
+      Proceed
+    </button>
+    </>
   );
 };
 

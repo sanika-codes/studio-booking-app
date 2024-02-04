@@ -8,7 +8,7 @@
 html {
   font-family: "Poppins", sans-serif;
 }
-input{
+input {
   accent-color: #7bbfc4;
 }
 body {
@@ -23,31 +23,28 @@ button {
   font-weight: 400;
   padding: 16px 56px;
   border-radius: 100px;
-  border:none;
-  
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    cursor:pointer;
+  border: none;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
-button:disabled{
-  background-color:#e6e6e6;
-  color:white;
-  cursor:not-allowed;
+button:disabled {
+  background-color: #e6e6e6;
+  color: white;
+  cursor: not-allowed;
 }
-.react-calendar button{
- 
-  padding:10px 8px;
-  font-size:16px;
+.react-calendar button {
+  padding: 10px 8px;
+  font-size: 16px;
 }
 button.hover-effect:hover {
   background-position: 100% 0;
-  
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-image: linear-gradient(to right, #7bbfc4, white);
-  
 }
 .text {
   color: #000;
@@ -55,17 +52,26 @@ button.hover-effect:hover {
   font-size: 24px;
   font-weight: 400;
 }
-.heading-normal{
-  font-size:36px;
-  font-weight:500;
+.small-text {
+  font-size: 16px;
+}
+.heading-normal {
+  font-size: 36px;
+  font-weight: 500;
 }
 @media screen and (max-width: 1024px) {
+  button:not(.hover-effect) {
+    padding: 10px;
+  }
   button,
   .text {
     font-size: 18px;
   }
-  .heading-normal{
-    font-size:26px;
+  .heading-normal {
+    font-size: 26px;
+  }
+  .small-text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -73,8 +79,11 @@ button.hover-effect:hover {
   .text {
     font-size: 14px;
   }
-  .heading-normal{
+  .heading-normal {
     font-size: 18px;
+  }
+  .small-text {
+    font-size: 12px;
   }
 }
 .extra-margin {
@@ -90,6 +99,13 @@ button.hover-effect:hover {
   flex-wrap: wrap;
   padding: 5%;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    align-content: center;
+    align-items: center;
+  }
+}
+
 .c-col {
   align-items: flex-start;
 }
@@ -110,16 +126,35 @@ button.hover-effect:hover {
   top: 05%;
   width: 5%;
 }
+#checkoutButton{
+  width: 80%;
+  margin-top: 5%;
+}
 .no-padding {
   padding: 0;
 }
-.no-wrap{
-  flex-wrap:nowrap;
+.no-wrap-desktop {
+  flex-wrap: nowrap;
 }
+@media screen and (max-width: 1024px) {
+  .no-wrap-desktop{
+    flex-wrap: wrap;
+  }
+  form button.hover-effect{
+    width:100%;
+    margin-top:3%;
+}
+}
+
+
 /*Make appropriate step in side panel in color blue*/
 .personal-info aside li:nth-of-type(1),
 .select-plan aside li:nth-of-type(2),
 .tnc aside li:nth-of-type(3),
 .payment aside li:nth-of-type(4) {
   color: #7bbfc4;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
